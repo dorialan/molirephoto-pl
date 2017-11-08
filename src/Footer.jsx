@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default  () => {
+export default () => {
   return (
     <nav className="navbar-inverse hidden-xs">
       <div className="container">

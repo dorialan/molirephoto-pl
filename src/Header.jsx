@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import logo from './logo.svg';
 
-export default () => {
+const Header = ({location}) => {
   return(
     <div className="row">
       <div className="col-md-2"></div>
@@ -13,24 +14,24 @@ export default () => {
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span className="sr-only">Toggle navigation</span><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="/">
+              <Link className="navbar-brand" to="/">
                 <img src={logo} alt="Molire" onError="this.onerror=null; this.src='images/logo.png'" style={{height: "40px"}} />
-              </a>
-              <a className="navbar-brand navbar-brand-text hidden-xs" href="/">Studio fotograficzne</a>
+              </Link>
+              <Link className="navbar-brand navbar-brand-text hidden-xs" to="/">Studio fotograficzne</Link>
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav">
                 <li className="main-menu-margin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li className="<%= current == 'about' ? 'active' : '' %>"><a href="/">O nas</a></li>
-                <li className="<%= current == 'portfolio' ? 'active' : '' %>"><a href="/portfolio">Portfolio</a></li>
-                <li className="<%= current == 'contacts' ? 'active' : '' %>"><a href="/kontakty">Kontakty</a></li>
+                <li className={location.pathname.match(/\/$/) && "active"}><Link to="/">O nas</Link></li>
+                <li className={location.pathname.match(/portfolio/) && "active"}><Link to="/portfolio">Portfolio</Link></li>
+                <li className={location.pathname.match(/kontakty/) && "active"}><Link to="/kontakty">Kontakty</Link></li>
               </ul>
 
               <p className="navbar-text navbar-right">
-                <a href="https://www.facebook.com/MolirePhoto/" rel="nofollow noopener noreferrer" target="_blank">
+                <Link to="https://www.facebook.com/MolirePhoto/" rel="nofollow noopener noreferrer" target="_blank">
                   <i className="fa fa-lg fa-facebook fa-fw" aria-hidden="true"></i> facebook
-                </a>
+                </Link>
               </p>
               <p className="navbar-text navbar-right hidden-sm">
                 <a href="https://www.instagram.com/molirephoto/" rel="nofollow noopener noreferrer" target="_blank">
@@ -52,3 +53,5 @@ export default () => {
     </div>
   )
 }
+
+export default withRouter(props => <Header {...props}/>);
