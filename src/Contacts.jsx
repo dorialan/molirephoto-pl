@@ -1,5 +1,8 @@
 import React from 'react';
 import Mailto from 'react-mailto';
+import IconEnvelope from './icons/envelope.svg';
+import IconPhone from './icons/phone.svg';
+import IconMapMarker from './icons/map-marker.svg';
 
 export default () => {
   return(
@@ -20,13 +23,13 @@ export default () => {
           </div>
           <address>
             <ul className="fa-ul">
-              <li><i className="fa-li fa fa-lg fa-envelope"></i>
+              <li><img src={IconEnvelope} className="fa-li icon" alt="Envelope"></img>
                 <Mailto email="info@molirephoto.pl" obfuscate={true}>
                   info@molirephoto.pl
                 </Mailto>
               </li>
-              <li><i className="fa-li fa fa-lg fa-phone"></i>793 764 553</li>
-              <li><i className="fa-li fa fa-lg fa-map-marker"></i>ul. Stefana Batorego 22/2, 31-135, Kraków</li>
+              <li><img src={IconPhone} className="fa-li icon" alt="Phone"></img>793 764 553</li>
+              <li><img src={IconMapMarker} className="fa-li icon" alt="Map"></img>ul. Stefana Batorego 22/2, 31-135, Kraków</li>
             </ul>
           </address>
 

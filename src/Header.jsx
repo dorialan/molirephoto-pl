@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import logo from './logo.svg';
+import IconFacebook from './icons/facebook.svg';
+import IconPhone from './icons/phone.svg';
+import IconInstagram from './icons/instagram.svg';
+import IconMapMarker from './icons/map-marker.svg';
 
 const Header = ({location}) => {
   return(
@@ -30,20 +34,20 @@ const Header = ({location}) => {
 
               <p className="navbar-text navbar-right">
                 <Link to="https://www.facebook.com/MolirePhoto/" rel="nofollow noopener noreferrer" target="_blank">
-                  <i className="fa fa-lg fa-facebook fa-fw" aria-hidden="true"></i> facebook
+                  <img src={IconFacebook} className="fa-li icon" alt="Facebook"></img>facebook
                 </Link>
               </p>
               <p className="navbar-text navbar-right hidden-sm">
                 <a href="https://www.instagram.com/molirephoto/" rel="nofollow noopener noreferrer" target="_blank">
-                  <i className="fa fa-lg fa-instagram fa-fw" aria-hidden="true"></i> instagram
+                  <img src={IconInstagram} className="fa-li icon" alt="Instagram"></img>instagram
                 </a>
               </p>
               <p className="navbar-text navbar-right hidden-sm">
-                <i className="fa fa-lg fa-phone fa-fw" aria-hidden="true"></i> 793 764 553
+                <img src={IconPhone} className="fa-li icon" alt="Instagram"></img>793 764 553
               </p>
               <p className="navbar-text navbar-left visible-xs">
                 <a href="https://goo.gl/maps/WbDr6JJodVS2" rel="nofollow noopener noreferrer" target="_blank">
-                  <i className="fa fa-lg fa-map-marker fa-fw" aria-hidden="true"></i> ul. Stefana Batorego 22/2
+                  <img src={IconMapMarker} className="fa-li icon" alt="Map"></img>ul. Stefana Batorego 22/2
                 </a>
               </p>
             </div>

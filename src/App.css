@@ -17,8 +17,19 @@ h3 {
   color: #FE6ABA;
 }
 
+.fa-ul {
+  list-style: none;
+}
+
 .fa-ul li {
   padding-bottom: 10px;
+}
+
+.icon {
+  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
 }
 
 .sub-nav {
