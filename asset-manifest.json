@@ -1,12 +1,17 @@
 {
-  "main.css": "static/css/main.5b7243e8.css",
-  "main.css.map": "static/css/main.5b7243e8.css.map",
-  "main.js": "static/js/main.39fd6509.js",
-  "main.js.map": "static/js/main.39fd6509.js.map",
+  "main.css": "static/css/main.24931030.css",
+  "main.css.map": "static/css/main.24931030.css.map",
+  "main.js": "static/js/main.45d8db8c.js",
+  "main.js.map": "static/js/main.45d8db8c.js.map",
+  "static/media/envelope.svg": "static/media/envelope.4ff7e8c8.svg",
+  "static/media/facebook.svg": "static/media/facebook.b86ac0ab.svg",
   "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
-  "static/media/logo.svg": "static/media/logo.666b47dd.svg"
+  "static/media/instagram.svg": "static/media/instagram.363afd45.svg",
+  "static/media/logo.svg": "static/media/logo.666b47dd.svg",
+  "static/media/map-marker.svg": "static/media/map-marker.a6c6432d.svg",
+  "static/media/phone.svg": "static/media/phone.53592cab.svg"
 }
