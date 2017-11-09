@@ -11,9 +11,9 @@ export default () => {
         title="Map"
         width="100%"
         height="300"
-        frameborder="0"
+        frameBorder="0"
         src="https://www.google.com/maps/embed/v1/place?q=Molire%20studio%20fotograficzne&key=AIzaSyA7UCJfeZ62Ah1CXlZXB3aESR2LFiIx95I"
-        allowfullscreen>
+        allowFullScreen>
       </iframe>
 
       <div className="row">
@@ -33,7 +33,7 @@ export default () => {
             </ul>
           </address>
 
-          <div class="fb-page"
+          <div className="fb-page"
             data-href="https://www.facebook.com/MolirePhoto/"
             data-tabs="messages"
             data-small-header="false"
@@ -42,7 +42,7 @@ export default () => {
             data-show-facepile="true"
             data-width="1900"
           >
-            <blockquote cite="https://www.facebook.com/MolirePhoto/" class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/MolirePhoto/" className="fb-xfbml-parse-ignore">
               <a href="https://www.facebook.com/MolirePhoto/">Molire - Studio fotograficzne w Krakowie</a>
             </blockquote>
           </div>
