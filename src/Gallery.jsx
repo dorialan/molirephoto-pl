@@ -20,7 +20,21 @@ export default class Gallery extends React.Component {
   }
 
   componentDidMount() {
-    getAlbumPhotos('72157683777711661')
+    getAlbumPhotos(this.props.albumId)
+    .then(photos =>
+      this.setState({
+        photos
+      })
+    )
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      isLoading: true,
+      photos: [],
+    })
+
+    getAlbumPhotos(nextProps.albumId)
     .then(photos =>
       this.setState({
         photos
@@ -64,7 +78,7 @@ export default class Gallery extends React.Component {
     return this.state.photos.map((photo, key) => {
       return (
         <div className="photo" key={key} onClick={() => this.openLightbox(key)}>
-          <img src={photo.thumbnail} alt="..." />
+          <img src={photo.thumbnail} alt="Molire" />
         </div>
       )
     })

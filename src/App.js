@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
@@ -16,7 +16,8 @@ class App extends Component {
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/portfolio/:albumId" component={Portfolio} />
+            <Redirect from="/portfolio" to="/portfolio/studio" />
             <Route path="/kontakty" component={Contacts} />
             <Route component={NotFound} />
           </Switch>

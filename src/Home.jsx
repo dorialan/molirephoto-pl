@@ -1,6 +1,8 @@
 import React from 'react';
 import Gallery from './Gallery'
 
+const STUDIO_ALBUM_ID = '72157683777711661'
+
 export default () => {
   return (
     <div className="row">
@@ -14,7 +16,7 @@ export default () => {
         <p>
           Mamy piękne scenerie takie jak: «Czułość», «Pokój dziecięcy», «Toaletka dla maleńkiej ślicznotki», pokój dla sesji noworodkowych i dużo innych.
         </p>
-        <Gallery />
+        <Gallery albumId={STUDIO_ALBUM_ID} />
       </div>
     </div>
   )
