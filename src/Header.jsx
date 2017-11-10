@@ -25,7 +25,7 @@ const Header = ({location, history}) => {
           <Navbar.Collapse>
             <Nav activeHref={location.pathname}>
               <NavItem href="/" onClick={() => history.replace("/")}>O nas</NavItem>
-              <NavItem href="/portfolio" onClick={() => history.replace("/portfolio")}>Portfolio</NavItem>
+              <NavItem href="/portfolio" active={location.pathname.match('portfolio')} onClick={() => history.replace("/portfolio")}>Portfolio</NavItem>
               <NavItem href="/kontakty" onClick={() => history.replace("/kontakty")}>Kontakty</NavItem>
             </Nav>
             <Nav pullRight>
