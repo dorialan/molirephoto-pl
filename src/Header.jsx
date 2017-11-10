@@ -12,7 +12,6 @@ const Header = ({location, history}) => {
     <div className="row">
       <div className="col-md-2"></div>
       <div className="col-md-8">
-
         <Navbar fixedTop collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -26,7 +25,7 @@ const Header = ({location, history}) => {
           <Navbar.Collapse>
             <Nav activeHref={location.pathname}>
               <NavItem href="/" onClick={() => history.replace("/")}>O nas</NavItem>
-              <NavItem href="/portfolio" onClick={() => history.replace("/portfolio")}>Portfolio</NavItem>
+              {/* <NavItem href="/portfolio" onClick={() => history.replace("/portfolio")}>Portfolio</NavItem> */}
               <NavItem href="/kontakty" onClick={() => history.replace("/kontakty")}>Kontakty</NavItem>
             </Nav>
             <Nav pullRight>
@@ -45,8 +44,6 @@ const Header = ({location, history}) => {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
-
       </div>
     </div>
   )

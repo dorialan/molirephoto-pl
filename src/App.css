@@ -54,3 +54,31 @@ h3 {
   color: #777;
 }
 
+.spinner {
+  -webkit-animation: rotate 1.5s linear infinite;
+  animation: rotate 1.5s linear infinite;
+  background: url(/loading.svg);
+  width: 76px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes rotate{ to{-webkit-transform: rotate(360deg); } }
+@keyframes         rotate{ to{        transform: rotate(360deg); } }
+
+.photo { width: 220px;
+  margin: 5px;
+  float: left;
+  max-width: 176px;
+  border: 3px solid #fff;
+}
+
+.photo:hover {
+  border: 3px solid #ff008a;
+}
+
+.photo img {
+  max-width: 100%;
+  display: block;
+}

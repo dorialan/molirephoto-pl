@@ -1,4 +1,5 @@
 import React from 'react';
+import Gallery from './Gallery'
 
 export default () => {
   return (
@@ -13,14 +14,9 @@ export default () => {
         <p>
           Mamy piękne scenerie takie jak: «Czułość», «Pokój dziecięcy», «Toaletka dla maleńkiej ślicznotki», pokój dla sesji noworodkowych i dużo innych.
         </p>
+        <Gallery />
       </div>
     </div>
-
-    // <center id="loading">
-    //   <br />
-    //   <br />
-    //   <img src="/images/loading.gif" alt="Loading" />
-    // </center>
   )
 }
 
