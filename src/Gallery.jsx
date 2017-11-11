@@ -63,14 +63,16 @@ export default class Gallery extends React.Component {
   }
 
   gotoPrevious() {
+    const prevPhotoIndex = this.state.currentImage - 1;
     this.setState({
-      currentImage: this.state.currentImage - 1,
+      currentImage: prevPhotoIndex < 0 ? this.photos.length - 1 : prevPhotoIndex,
     });
   }
 
   gotoNext() {
+    const nextPhotoIndex = this.state.currentImage + 1;
     this.setState({
-      currentImage: this.state.currentImage + 1,
+      currentImage: nextPhotoIndex >= this.state.photos.length ? 0 : nextPhotoIndex,
     });
   }
 
@@ -86,7 +88,7 @@ export default class Gallery extends React.Component {
 
   render() {
     return (
-      <div style={{ marginBottom: "2em" }}>
+      <div>
         { this.state.isLoading && <div className="spinner" /> }
         <Masonry
           onImagesLoaded={this.handleImagesLoaded.bind(this)}
