@@ -26,6 +26,7 @@ const Header = ({location, history}) => {
             <Nav activeHref={location.pathname}>
               <NavItem href="/" onClick={() => history.replace("/")}>O nas</NavItem>
               <NavItem href="/portfolio" active={!!location.pathname.match('portfolio')} onClick={() => history.replace("/portfolio")}>Portfolio</NavItem>
+              { false && <NavItem href="/rezerwacja" onClick={() => history.replace("/rezerwacja")}>Rezerwacja</NavItem> }
               <NavItem href="/kontakty" onClick={() => history.replace("/kontakty")}>Kontakty</NavItem>
             </Nav>
             <Nav pullRight>
