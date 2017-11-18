@@ -5,7 +5,7 @@ export default () => {
     <iframe
       src="https://molirephoto.nakiedy.pl/em/?h=530"
       id="nakiedyWidget"
-      style={{width: "100%", height: "800px", border: "0", maxWidth: "100%"}}
+      style={{display: "block", margin: "0 auto", width: "600px", height: "800px", border: "0", maxWidth: "100%"}}
     >
     </iframe>
   )
