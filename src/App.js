@@ -6,6 +6,7 @@ import Footer from './Footer';
 import NotFound from './NotFound';
 import Contacts from './Contacts';
 import Portfolio from './Portfolio';
+import Price from './Price';
 import Schedule from './Schedule';
 import './App.css';
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/portfolio/:albumId" component={Portfolio} />
             <Redirect from="/portfolio" to="/portfolio/studio" />
             <Route path="/kontakty" component={Contacts} />
+            <Route path="/cena" component={Price} />
             <Route path="/rezerwacja" component={Schedule} />
             <Route component={NotFound} />
           </Switch>
